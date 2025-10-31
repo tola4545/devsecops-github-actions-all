@@ -14,7 +14,7 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven cloud
-      run:  mvn -B verify sonar:sonar -Dsonar.projectKey=javeprojecttracability2_javeprojecttracability2 -Dsonar.organization=javeprojecttracability -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
+      run:  mvn -B verify sonar:sonar -Dsonar.projectKey=javaprojectcorrection2 -Dsonar.organization=javeproject -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
